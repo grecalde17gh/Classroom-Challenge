@@ -26,3 +26,4 @@ quizzes/cpd.json
 3. Crear dashboard del docente.
 4. Publicar con GitHub Pages.
 5. Añadir bancos reutilizables para otros temas y materias.
+
