@@ -1,1 +1,569 @@
-{"id":"cpd","title":"Centro de Procesamiento de Datos","questionsPerGame":5,"questions":[{"category":"CPD","type":"Concepto","question":"¿Cuál describe mejor a un Centro de Procesamiento de Datos?","answers":["Una sala con computadores personales","Una infraestructura que integra procesamiento, almacenamiento, comunicaciones y soporte físico","Un sistema operativo para servidores","Un dispositivo dedicado únicamente a copias de seguridad"],"correct":1,"feedback":"Un CPD integra servidores, almacenamiento, red e infraestructura física para prestar servicios."},{"category":"Servidores","type":"Escenario","question":"Un equipo está dedicado a alojar páginas y responder solicitudes HTTP/HTTPS. ¿Qué función cumple principalmente?","answers":["Servidor web","Servidor de correo","Servidor de archivos","UPS"],"correct":0,"feedback":"Un servidor web atiende solicitudes HTTP/HTTPS y entrega contenido o aplicaciones web."},{"category":"RAID","type":"⚡ Respuesta relámpago","question":"Dos discos mantienen copias idénticas de los mismos datos. ¿Qué nivel RAID representa?","answers":["RAID 0","RAID 1","RAID 5","SAN"],"correct":1,"feedback":"RAID 1 usa mirroring: duplica los datos para mantener redundancia."},{"category":"NAS/SAN","type":"Comparación","question":"¿Cuál es la diferencia conceptual principal entre NAS y SAN?","answers":["NAS trabaja principalmente con archivos; SAN proporciona almacenamiento a nivel de bloques","NAS siempre es más rápido que SAN","SAN solo sirve para backups","NAS no utiliza red"],"correct":0,"feedback":"NAS se orienta a acceso a archivos; SAN presenta almacenamiento por bloques a los servidores."},{"category":"Disponibilidad","type":"☠️ Todo o nada ×2","multiplier":2,"question":"Todos los servidores funcionan, pero falla la única conexión de red hacia los usuarios. ¿Qué demuestra el escenario?","answers":["Que RAID ha fallado","Que la disponibilidad depende de varios componentes del sistema","Que el servidor necesita más memoria RAM","Que un NAS sustituye a la red"],"correct":1,"feedback":"La disponibilidad es resultado del sistema completo: red, servidores, almacenamiento e infraestructura."}]}
+{
+  "id": "cpd",
+  "title": "Centro de Procesamiento de Datos",
+  "questionsPerGame": 24,
+  "questions": [
+    {
+      "id": "cpd-01",
+      "category": "CPD",
+      "type": "Concepto",
+      "question": "¿Cuál describe mejor a un Centro de Procesamiento de Datos?",
+      "answers": [
+        "Una sala con computadores personales",
+        "Una infraestructura que integra procesamiento, almacenamiento, comunicaciones y soporte físico",
+        "Un sistema operativo para servidores",
+        "Un dispositivo dedicado únicamente a copias de seguridad"
+      ],
+      "correct": 1,
+      "feedback": "Un CPD integra recursos para procesar, almacenar y comunicar información."
+    },
+    {
+      "id": "cpd-02",
+      "category": "CPD",
+      "type": "Concepto",
+      "question": "¿Cuál de estos elementos forma parte del ecosistema de un CPD además de los servidores?",
+      "answers": [
+        "Solo monitores",
+        "Energía y climatización",
+        "Impresoras personales",
+        "Teclados inalámbricos"
+      ],
+      "correct": 1,
+      "feedback": "Un CPD requiere infraestructura de soporte como energía y climatización."
+    },
+    {
+      "id": "cpd-03",
+      "category": "CPD",
+      "type": "Escenario",
+      "question": "Una organización mantiene servicios en dos ubicaciones para reducir el impacto de una falla física. ¿Qué idea está aplicando?",
+      "answers": [
+        "Redundancia",
+        "Polling",
+        "Overclocking",
+        "Fragmentación"
+      ],
+      "correct": 0,
+      "feedback": "La redundancia busca evitar que una única falla deje todo el servicio fuera de operación."
+    },
+    {
+      "id": "cpd-04",
+      "category": "CPD",
+      "type": "Concepto",
+      "question": "¿Cuál es el propósito principal de la infraestructura de comunicaciones en un CPD?",
+      "answers": [
+        "Enfriar los racks",
+        "Conectar usuarios, servidores y recursos",
+        "Duplicar archivos automáticamente",
+        "Reemplazar la UPS"
+      ],
+      "correct": 1,
+      "feedback": "La red permite el intercambio de información entre usuarios, servidores y almacenamiento."
+    },
+    {
+      "id": "cpd-05",
+      "category": "CPD",
+      "type": "Razonamiento",
+      "question": "¿Por qué un Data Center no debe entenderse únicamente como una sala con servidores?",
+      "answers": [
+        "Porque los servidores no procesan datos",
+        "Porque también depende de almacenamiento, red, energía, refrigeración y seguridad",
+        "Porque todos los Data Centers están en la nube",
+        "Porque solo contiene sistemas de backup"
+      ],
+      "correct": 1,
+      "feedback": "La disponibilidad del servicio depende de un ecosistema completo de infraestructura."
+    },
+    {
+      "id": "cpd-06",
+      "category": "Servidores",
+      "type": "Concepto",
+      "question": "¿Qué diferencia funcional caracteriza principalmente a un servidor frente a un PC de usuario?",
+      "answers": [
+        "Siempre tiene una pantalla más grande",
+        "Está orientado a proporcionar servicios y recursos a otros equipos o usuarios",
+        "No utiliza memoria RAM",
+        "Solo puede ejecutar un programa"
+      ],
+      "correct": 1,
+      "feedback": "Un servidor está orientado a prestar servicios a otros sistemas o usuarios."
+    },
+    {
+      "id": "cpd-07",
+      "category": "Servidores",
+      "type": "Concepto",
+      "question": "¿Para qué se utiliza un rack en un CPD?",
+      "answers": [
+        "Para organizar y alojar equipos de infraestructura",
+        "Para reemplazar la red",
+        "Para crear copias de seguridad",
+        "Para aumentar la frecuencia del CPU"
+      ],
+      "correct": 0,
+      "feedback": "Los racks permiten organizar físicamente servidores y otros equipos."
+    },
+    {
+      "id": "cpd-08",
+      "category": "Servidores",
+      "type": "Escenario",
+      "question": "Un equipo está dedicado a alojar páginas y responder solicitudes HTTP/HTTPS. ¿Qué función cumple principalmente?",
+      "answers": [
+        "Servidor web",
+        "Servidor de correo",
+        "Servidor de archivos",
+        "UPS"
+      ],
+      "correct": 0,
+      "feedback": "Un servidor web atiende solicitudes HTTP/HTTPS."
+    },
+    {
+      "id": "cpd-09",
+      "category": "Servidores",
+      "type": "Escenario",
+      "question": "Los empleados necesitan guardar y compartir documentos desde un recurso central. ¿Qué servicio encaja mejor?",
+      "answers": [
+        "Servidor de archivos",
+        "Servidor web",
+        "Generador eléctrico",
+        "SAN exclusivamente"
+      ],
+      "correct": 0,
+      "feedback": "Un servidor de archivos centraliza el acceso a archivos compartidos."
+    },
+    {
+      "id": "cpd-10",
+      "category": "Servidores",
+      "type": "Escenario",
+      "question": "Una organización necesita enviar y recibir mensajes electrónicos. ¿Qué tipo de servidor participa directamente?",
+      "answers": [
+        "Servidor de correo",
+        "Servidor de archivos",
+        "UPS",
+        "Rack"
+      ],
+      "correct": 0,
+      "feedback": "El servidor de correo soporta servicios relacionados con el correo electrónico."
+    },
+    {
+      "id": "cpd-11",
+      "category": "Servidores",
+      "type": "Escenario",
+      "question": "Una aplicación empresarial ejecuta su lógica de negocio en un sistema central al que acceden varios usuarios. ¿Qué función describe mejor?",
+      "answers": [
+        "Servidor de aplicaciones",
+        "Servidor de archivos",
+        "Switch",
+        "UPS"
+      ],
+      "correct": 0,
+      "feedback": "Un servidor de aplicaciones ejecuta lógica y servicios de aplicaciones."
+    },
+    {
+      "id": "cpd-12",
+      "category": "Servidores",
+      "type": "Razonamiento",
+      "question": "¿Por qué una organización podría usar varios servidores trabajando conjuntamente?",
+      "answers": [
+        "Para formar un cluster y mejorar continuidad o capacidad",
+        "Para eliminar la necesidad de red",
+        "Para convertir RAM en almacenamiento",
+        "Para evitar usar racks"
+      ],
+      "correct": 0,
+      "feedback": "Un cluster permite que varios sistemas colaboren para prestar un servicio."
+    },
+    {
+      "id": "cpd-13",
+      "category": "RAID",
+      "type": "Concepto",
+      "question": "¿Cuál es la idea general de RAID estudiada en clase?",
+      "answers": [
+        "Combinar varios discos con distintas estrategias de rendimiento, capacidad o tolerancia a fallos",
+        "Sustituir toda copia de seguridad",
+        "Crear una red inalámbrica",
+        "Refrigerar discos"
+      ],
+      "correct": 0,
+      "feedback": "RAID organiza varios discos según objetivos como rendimiento o redundancia."
+    },
+    {
+      "id": "cpd-14",
+      "category": "RAID",
+      "type": "⚡ Respuesta relámpago",
+      "question": "¿Qué característica define a RAID 0?",
+      "answers": [
+        "Mirroring",
+        "Striping sin redundancia",
+        "Paridad con tolerancia a un disco",
+        "Copia externa"
+      ],
+      "correct": 1,
+      "feedback": "RAID 0 distribuye datos entre discos y no aporta redundancia."
+    },
+    {
+      "id": "cpd-15",
+      "category": "RAID",
+      "type": "Escenario",
+      "question": "Un RAID 0 pierde uno de sus discos. ¿Cuál es el principal problema?",
+      "answers": [
+        "El conjunto puede quedar comprometido",
+        "El otro disco contiene una copia idéntica",
+        "La paridad reconstruye automáticamente el disco",
+        "Se activa una SAN"
+      ],
+      "correct": 0,
+      "feedback": "RAID 0 no tiene redundancia; la pérdida de un disco compromete el conjunto."
+    },
+    {
+      "id": "cpd-16",
+      "category": "RAID",
+      "type": "⚡ Respuesta relámpago",
+      "question": "Dos discos mantienen copias idénticas de los mismos datos. ¿Qué nivel RAID representa?",
+      "answers": [
+        "RAID 0",
+        "RAID 1",
+        "RAID 5",
+        "NAS"
+      ],
+      "correct": 1,
+      "feedback": "RAID 1 utiliza mirroring."
+    },
+    {
+      "id": "cpd-17",
+      "category": "RAID",
+      "type": "Escenario",
+      "question": "Se configuran dos discos de 1 TB en RAID 1. Aproximadamente, ¿cuánta capacidad útil queda para datos?",
+      "answers": [
+        "2 TB",
+        "1 TB",
+        "500 GB",
+        "3 TB"
+      ],
+      "correct": 1,
+      "feedback": "En RAID 1 los datos se duplican; dos discos de 1 TB ofrecen aproximadamente 1 TB útil."
+    },
+    {
+      "id": "cpd-18",
+      "category": "RAID",
+      "type": "Concepto",
+      "question": "¿Cuál es el número mínimo de discos estudiado para RAID 5?",
+      "answers": [
+        "1",
+        "2",
+        "3",
+        "5"
+      ],
+      "correct": 2,
+      "feedback": "RAID 5 requiere al menos tres discos."
+    },
+    {
+      "id": "cpd-19",
+      "category": "RAID",
+      "type": "Escenario",
+      "question": "Una empresa quiere tolerar la falla de un disco y aprovechar mejor la capacidad que con un espejo. Tiene al menos tres discos. ¿Qué opción encaja mejor?",
+      "answers": [
+        "RAID 0",
+        "RAID 1",
+        "RAID 5",
+        "Ningún almacenamiento"
+      ],
+      "correct": 2,
+      "feedback": "RAID 5 distribuye datos y paridad y tolera la falla de un disco."
+    },
+    {
+      "id": "cpd-20",
+      "category": "RAID",
+      "type": "Comparación",
+      "question": "¿Cuál asociación es correcta?",
+      "answers": [
+        "RAID 0: redundancia por espejo",
+        "RAID 1: mirroring",
+        "RAID 5: sin tolerancia a fallos",
+        "RAID 1: striping sin redundancia"
+      ],
+      "correct": 1,
+      "feedback": "RAID 1 se basa en mirroring."
+    },
+    {
+      "id": "cpd-21",
+      "category": "RAID",
+      "type": "Razonamiento",
+      "question": "¿Por qué RAID no debe considerarse un reemplazo del backup?",
+      "answers": [
+        "Porque RAID solo funciona con SSD",
+        "Porque RAID aborda ciertas fallas de discos, mientras el backup permite recuperar datos ante otros escenarios",
+        "Porque el backup siempre usa RAID 0",
+        "Porque RAID no almacena información"
+      ],
+      "correct": 1,
+      "feedback": "RAID y backup resuelven problemas distintos."
+    },
+    {
+      "id": "cpd-22",
+      "category": "RAID",
+      "type": "☠️ Todo o nada ×2",
+      "question": "Un usuario elimina accidentalmente un archivo y la eliminación se replica correctamente en el almacenamiento redundante. ¿Qué recurso sería especialmente importante para recuperarlo?",
+      "answers": [
+        "Backup",
+        "RAID 0",
+        "Rack",
+        "UPS"
+      ],
+      "correct": 0,
+      "feedback": "La redundancia de discos no sustituye una copia de seguridad recuperable.",
+      "multiplier": 2
+    },
+    {
+      "id": "cpd-23",
+      "category": "NAS/SAN",
+      "type": "Concepto",
+      "question": "¿Qué significa NAS en el contexto estudiado?",
+      "answers": [
+        "Network Attached Storage",
+        "Network Application Server",
+        "New Array System",
+        "Node Access Switch"
+      ],
+      "correct": 0,
+      "feedback": "NAS significa Network Attached Storage."
+    },
+    {
+      "id": "cpd-24",
+      "category": "NAS/SAN",
+      "type": "Concepto",
+      "question": "¿Cómo acceden normalmente los usuarios o sistemas a un NAS según el modelo visto?",
+      "answers": [
+        "Como archivos compartidos a través de la red",
+        "Como instrucciones del CPU",
+        "Mediante la UPS",
+        "Solo mediante paridad RAID"
+      ],
+      "correct": 0,
+      "feedback": "NAS ofrece almacenamiento compartido orientado a archivos."
+    },
+    {
+      "id": "cpd-25",
+      "category": "NAS/SAN",
+      "type": "Comparación",
+      "question": "¿Cuál es la diferencia conceptual principal entre NAS y SAN?",
+      "answers": [
+        "NAS trabaja principalmente con archivos; SAN proporciona almacenamiento a nivel de bloques",
+        "NAS siempre es más rápido que SAN",
+        "SAN solo sirve para backups",
+        "NAS no utiliza red"
+      ],
+      "correct": 0,
+      "feedback": "NAS se orienta a archivos y SAN a almacenamiento por bloques."
+    },
+    {
+      "id": "cpd-26",
+      "category": "NAS/SAN",
+      "type": "Escenario",
+      "question": "Varios empleados necesitan acceder a carpetas compartidas de forma sencilla por la red. ¿Qué solución encaja naturalmente?",
+      "answers": [
+        "NAS",
+        "UPS",
+        "Generador",
+        "RAID 0 sin red"
+      ],
+      "correct": 0,
+      "feedback": "NAS es apropiado para compartir archivos por red."
+    },
+    {
+      "id": "cpd-27",
+      "category": "NAS/SAN",
+      "type": "Escenario",
+      "question": "Varios servidores empresariales necesitan acceso a almacenamiento compartido presentado a nivel de bloques. ¿Qué tecnología encaja mejor?",
+      "answers": [
+        "SAN",
+        "Servidor web",
+        "UPS",
+        "CCTV"
+      ],
+      "correct": 0,
+      "feedback": "SAN proporciona almacenamiento compartido a nivel de bloques."
+    },
+    {
+      "id": "cpd-28",
+      "category": "Infraestructura",
+      "type": "Concepto",
+      "question": "¿Qué función cumple una UPS/SAI en un CPD?",
+      "answers": [
+        "Proporcionar respaldo inmediato y cubrir la transición ante fallas eléctricas",
+        "Refrigerar servidores",
+        "Reemplazar el almacenamiento",
+        "Enviar correo"
+      ],
+      "correct": 0,
+      "feedback": "La UPS proporciona energía inmediata durante una interrupción o transición."
+    },
+    {
+      "id": "cpd-29",
+      "category": "Infraestructura",
+      "type": "Escenario",
+      "question": "Se corta la red eléctrica comercial. ¿Qué combinación representa mejor la continuidad energética estudiada?",
+      "answers": [
+        "UPS para respuesta inmediata y generador para respaldo de mayor duración",
+        "NAS y SAN",
+        "RAID 0 y RAID 1",
+        "Switch y servidor web"
+      ],
+      "correct": 0,
+      "feedback": "UPS y generador cumplen funciones complementarias."
+    },
+    {
+      "id": "cpd-30",
+      "category": "Infraestructura",
+      "type": "Concepto",
+      "question": "¿Cuál es el objetivo de separar pasillos fríos y calientes?",
+      "answers": [
+        "Gestionar mejor el flujo de aire y la refrigeración",
+        "Separar archivos de bloques",
+        "Aumentar la capacidad RAID",
+        "Crear dominios de red"
+      ],
+      "correct": 0,
+      "feedback": "La separación ayuda a controlar el flujo de aire frío y caliente."
+    },
+    {
+      "id": "cpd-31",
+      "category": "Infraestructura",
+      "type": "Razonamiento",
+      "question": "¿Por qué no basta con instalar un aire acondicionado potente en un CPD?",
+      "answers": [
+        "Porque también importa dirigir correctamente el flujo de aire y controlar condiciones ambientales",
+        "Porque los servidores no generan calor",
+        "Porque la refrigeración solo protege los cables",
+        "Porque RAID 5 enfría los discos"
+      ],
+      "correct": 0,
+      "feedback": "La climatización requiere gestión del flujo de aire y del ambiente."
+    },
+    {
+      "id": "cpd-32",
+      "category": "Infraestructura",
+      "type": "Concepto",
+      "question": "¿Cuál es un mecanismo de seguridad física de un CPD?",
+      "answers": [
+        "Control de acceso",
+        "RAID 0",
+        "HTTP",
+        "Striping"
+      ],
+      "correct": 0,
+      "feedback": "El control de acceso limita la entrada a personal autorizado."
+    },
+    {
+      "id": "cpd-33",
+      "category": "Infraestructura",
+      "type": "Concepto",
+      "question": "¿Qué pueden supervisar los sensores ambientales de un CPD?",
+      "answers": [
+        "Temperatura, humedad o fugas de agua",
+        "Contraseñas de usuarios",
+        "Instrucciones del CPU",
+        "Direcciones de correo"
+      ],
+      "correct": 0,
+      "feedback": "Los sensores ambientales vigilan condiciones físicas que pueden afectar los equipos."
+    },
+    {
+      "id": "cpd-34",
+      "category": "Infraestructura",
+      "type": "Escenario",
+      "question": "Una cámara vigila permanentemente el acceso a una sala de servidores. ¿Qué control representa?",
+      "answers": [
+        "Videovigilancia",
+        "RAID",
+        "Clustering",
+        "Paridad"
+      ],
+      "correct": 0,
+      "feedback": "La videovigilancia es una medida de seguridad física."
+    },
+    {
+      "id": "cpd-35",
+      "category": "Disponibilidad",
+      "type": "Concepto",
+      "question": "¿Qué expresa, en términos generales, un porcentaje de disponibilidad?",
+      "answers": [
+        "La proporción de tiempo en que un servicio está disponible",
+        "La capacidad total de los discos",
+        "La temperatura del CPD",
+        "El número de racks"
+      ],
+      "correct": 0,
+      "feedback": "La disponibilidad relaciona el tiempo de servicio operativo con el periodo considerado."
+    },
+    {
+      "id": "cpd-36",
+      "category": "Disponibilidad",
+      "type": "Cálculo conceptual",
+      "question": "Según la aproximación anual vista, ¿qué indisponibilidad corresponde aproximadamente a 99,9 % de disponibilidad?",
+      "answers": [
+        "8,76 horas al año",
+        "3,65 días al año",
+        "5,26 minutos al año",
+        "52,6 minutos al año"
+      ],
+      "correct": 0,
+      "feedback": "99,9 % equivale aproximadamente a 8,76 horas de indisponibilidad anual."
+    },
+    {
+      "id": "cpd-37",
+      "category": "Disponibilidad",
+      "type": "Cálculo conceptual",
+      "question": "Según la aproximación anual vista, ¿qué indisponibilidad corresponde aproximadamente a 99,999 %?",
+      "answers": [
+        "5,26 minutos al año",
+        "8,76 horas al año",
+        "3,65 días al año",
+        "52,6 horas al año"
+      ],
+      "correct": 0,
+      "feedback": "Cinco nueves equivalen aproximadamente a 5,26 minutos de indisponibilidad anual."
+    },
+    {
+      "id": "cpd-38",
+      "category": "Disponibilidad",
+      "type": "Concepto",
+      "question": "¿Qué caracteriza a Tier III en el modelo explicado?",
+      "answers": [
+        "Infraestructura concurrentemente mantenible",
+        "Ausencia total de redundancia",
+        "Solo un disco por servidor",
+        "Garantía absoluta de cero fallos"
+      ],
+      "correct": 0,
+      "feedback": "Tier III se caracteriza por ser concurrentemente mantenible."
+    },
+    {
+      "id": "cpd-39",
+      "category": "Disponibilidad",
+      "type": "Concepto",
+      "question": "¿Qué característica se asocia a Tier IV en el modelo explicado?",
+      "answers": [
+        "Tolerancia a fallos",
+        "Solo almacenamiento NAS",
+        "Sin sistemas redundantes",
+        "Uso obligatorio de RAID 0"
+      ],
+      "correct": 0,
+      "feedback": "Tier IV incorpora el concepto de tolerancia a fallos."
+    },
+    {
+      "id": "cpd-40",
+      "category": "Disponibilidad",
+      "type": "☠️ Todo o nada ×2",
+      "question": "Los servidores y discos funcionan, pero falla la única conexión de red hacia los usuarios. ¿Qué demuestra el escenario?",
+      "answers": [
+        "Que RAID ha fallado",
+        "Que la disponibilidad depende de varios componentes del sistema",
+        "Que el servidor necesita más RAM",
+        "Que un NAS sustituye a la red"
+      ],
+      "correct": 1,
+      "feedback": "La disponibilidad depende del sistema completo, incluida la conectividad.",
+      "multiplier": 2
+    }
+  ]
+}
