@@ -2,6 +2,7 @@ const SUPABASE_URL="https://ygumqtxirstskgnvukvi.supabase.co";
 const SUPABASE_KEY="sb_publishable_UbM71RjGxBQRpIBDyi4M4Q_WykPatop";
 window.DB={
  async req(path,{method="GET",body}={}){const r=await fetch(SUPABASE_URL+"/rest/v1/"+path,{method,headers:{apikey:SUPABASE_KEY,Authorization:"Bearer "+SUPABASE_KEY,"Content-Type":"application/json",Prefer:"return=representation"},body:body?JSON.stringify(body):undefined});if(!r.ok)throw Error((await r.text())||"Error de Supabase");const t=await r.text();return t?JSON.parse(t):null},
+ async createSession(data){const rows=await this.req("sessions",{method:"POST",body:data});return rows[0]},
  async findSession(code){const rows=await this.req("sessions?code=eq."+encodeURIComponent(code.toUpperCase())+"&select=*");return rows?.[0]||null},
  async joinTeam(sessionId,name){const rows=await this.req("teams",{method:"POST",body:{session_id:sessionId,name}});return rows[0]},
  async createGame(sessionId,teamId){const rows=await this.req("games",{method:"POST",body:{session_id:sessionId,team_id:teamId,total_questions:24}});return rows[0]},
