@@ -1,0 +1,1 @@
+window.Scoring={pointsFor(seconds,multiplier=1){const base=seconds<=5?100:seconds<=10?90:seconds<=15?80:seconds<=20?70:60;return base*multiplier},streakBonus(streak){if(streak===3)return 50;if(streak>3&&streak%5===0)return 100;return 0}};
