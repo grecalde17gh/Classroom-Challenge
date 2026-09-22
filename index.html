@@ -22,10 +22,10 @@
     </div>
     <form id="startForm">
       <label>Actividad<select id="quizSelect"><option value="cpd">Centro de Procesamiento de Datos</option></select></label>
-      <label id="teamField">Nombre del equipo<input id="teamName" maxlength="28" placeholder="Ej.: Los Kernel" autocomplete="off"></label>
+      <label id="sessionField">Código de sesión<input id="sessionCode" maxlength="10" placeholder="Ej.: CPD4821" autocomplete="off"></label><label id="teamField">Nombre del equipo<input id="teamName" maxlength="28" placeholder="Ej.: Los Kernel" autocomplete="off"></label>
       <button class="primary" type="submit">COMENZAR MISIÓN →</button>
     </form>
-    <p class="note">Versión 1 · El ranking compartido y el panel docente se conectarán en la siguiente fase.</p>
+    <p class="note">Competencia: ingresa el código creado por el docente. Práctica: no requiere sesión.</p>
   </section>
 
   <section id="game" class="card hidden">
@@ -44,5 +44,5 @@
     <button id="restart" class="secondary">↻ JUGAR DE NUEVO</button>
   </section>
 </main>
-<script src="js/scoring.js"></script><script src="js/game.js"></script><script src="js/app.js"></script>
+<script src="js/database.js"></script><script src="js/scoring.js"></script><script src="js/game.js"></script><script src="js/app.js"></script>
 </body></html>
