@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101b35">
+  <title>Classroom Challenge</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<main class="shell">
+  <header class="hero">
+    <div><p class="eyebrow">UIDE · Repaso interactivo</p><h1>Classroom <span>Challenge</span></h1><p>Compite, consolida conceptos y prepárate para la evaluación.</p></div>
+    <div class="hero-mark">CC</div>
+  </header>
+
+  <section id="home" class="card">
+    <h2>¿Cómo quieres jugar?</h2>
+    <div class="modes">
+      <button class="mode selected" data-mode="competition"><b>🏆 Competencia</b><small>Equipos de 2–3 estudiantes · hasta 12 equipos</small></button>
+      <button class="mode" data-mode="practice"><b>📚 Práctica</b><small>Repaso individual, sin ranking de clase</small></button>
+    </div>
+    <form id="startForm">
+      <label>Actividad<select id="quizSelect"><option value="cpd">Centro de Procesamiento de Datos</option></select></label>
+      <label id="teamField">Nombre del equipo<input id="teamName" maxlength="28" placeholder="Ej.: Los Kernel" autocomplete="off"></label>
+      <button class="primary" type="submit">COMENZAR MISIÓN →</button>
+    </form>
+    <p class="note">Versión 1 · El ranking compartido y el panel docente se conectarán en la siguiente fase.</p>
+  </section>
+
+  <section id="game" class="card hidden">
+    <div class="hud"><b id="progress"></b><span>⏱ <b id="timer">0.0</b>s</span><span>🔥 <b id="streak">0</b></span><span>⭐ <b id="score">0</b></span></div>
+    <div class="track"><div id="bar"></div></div>
+    <p id="category" class="eyebrow"></p><h2 id="question"></h2>
+    <div id="answers" class="answers"></div>
+    <div id="feedback" class="feedback hidden" aria-live="polite"></div>
+  </section>
+
+  <section id="results" class="card hidden">
+    <div class="finish">🏁</div><p class="eyebrow">Misión completada</p><h2 id="resultName"></h2>
+    <div id="finalScore" class="big"></div>
+    <div class="stats"><div><b id="correctStat"></b><small>Aciertos</small></div><div><b id="timeStat"></b><small>Tiempo</small></div><div><b id="accuracyStat"></b><small>Precisión</small></div></div>
+    <div id="categoryResults" class="category-results"></div>
+    <button id="restart" class="secondary">↻ JUGAR DE NUEVO</button>
+  </section>
+</main>
+<script src="js/scoring.js"></script><script src="js/game.js"></script><script src="js/app.js"></script>
+</body></html>
