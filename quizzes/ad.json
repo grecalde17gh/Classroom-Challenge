@@ -1,0 +1,568 @@
+{
+  "id": "ad",
+  "title": "Active Directory Challenge",
+  "questionsPerGame": 24,
+  "questions": [
+    {
+      "id": "ad-01",
+      "category": "LDAP y DNS",
+      "type": "Concepto",
+      "question": "¿Cuál es la función principal de LDAP dentro de Active Directory?",
+      "answers": [
+        "Asignar direcciones IP",
+        "Consultar y administrar objetos y atributos del directorio",
+        "Crear máquinas virtuales",
+        "Cifrar discos"
+      ],
+      "correct": 1,
+      "feedback": "LDAP permite consultar y administrar la información almacenada en el directorio."
+    },
+    {
+      "id": "ad-02",
+      "category": "LDAP y DNS",
+      "type": "Concepto",
+      "question": "¿Por qué DNS es fundamental para Active Directory?",
+      "answers": [
+        "Porque almacena contraseñas",
+        "Porque permite localizar servicios y controladores de dominio",
+        "Porque reemplaza LDAP",
+        "Porque administra permisos NTFS"
+      ],
+      "correct": 1,
+      "feedback": "AD utiliza DNS para localizar controladores de dominio y otros servicios."
+    },
+    {
+      "id": "ad-03",
+      "category": "LDAP y DNS",
+      "type": "⚡ Respuesta relámpago",
+      "question": "¿Qué tipo de registro DNS ayuda a un cliente a localizar servicios como LDAP en un dominio?",
+      "answers": [
+        "MX",
+        "TXT",
+        "SRV",
+        "PTR"
+      ],
+      "correct": 2,
+      "feedback": "Los registros SRV publican la ubicación de servicios como LDAP y Kerberos."
+    },
+    {
+      "id": "ad-04",
+      "category": "LDAP y DNS",
+      "type": "Escenario",
+      "question": "Un cliente puede hacer ping al servidor por IP, pero no encuentra el dominio. ¿Qué configuración conviene revisar primero?",
+      "answers": [
+        "La resolución de pantalla",
+        "El DNS configurado en el cliente",
+        "El tamaño del disco virtual",
+        "El nombre del usuario local"
+      ],
+      "correct": 1,
+      "feedback": "En AD, una configuración DNS incorrecta impide localizar correctamente el dominio y sus servicios."
+    },
+    {
+      "id": "ad-05",
+      "category": "Dominios y Workgroup",
+      "type": "Concepto",
+      "question": "¿Cuál es una diferencia fundamental entre un Workgroup y un dominio?",
+      "answers": [
+        "El Workgroup necesita un DC",
+        "El dominio permite administración centralizada",
+        "El dominio no usa usuarios",
+        "El Workgroup exige DNS"
+      ],
+      "correct": 1,
+      "feedback": "Un dominio centraliza identidades, autenticación y administración mediante Active Directory."
+    },
+    {
+      "id": "ad-06",
+      "category": "Dominios y Workgroup",
+      "type": "Escenario",
+      "question": "En un Workgroup, ¿dónde se administran normalmente las cuentas de usuario?",
+      "answers": [
+        "En cada equipo de forma local",
+        "Solo en DNS",
+        "En el Global Catalog",
+        "En un FSMO"
+      ],
+      "correct": 0,
+      "feedback": "En un Workgroup cada equipo administra sus propias cuentas y recursos."
+    },
+    {
+      "id": "ad-07",
+      "category": "Dominios y Workgroup",
+      "type": "Razonamiento",
+      "question": "Una empresa quiere administrar centralmente 100 computadores y sus usuarios. ¿Qué modelo encaja mejor?",
+      "answers": [
+        "Workgroup",
+        "Dominio",
+        "RAID",
+        "Site sin dominio"
+      ],
+      "correct": 1,
+      "feedback": "El dominio facilita administración y autenticación centralizadas."
+    },
+    {
+      "id": "ad-08",
+      "category": "OU y estructura lógica",
+      "type": "Concepto",
+      "question": "¿Qué representa una OU en Active Directory?",
+      "answers": [
+        "Una subred IP",
+        "Un contenedor lógico para organizar objetos",
+        "Un servidor DNS",
+        "Una relación de confianza"
+      ],
+      "correct": 1,
+      "feedback": "Las OU permiten organizar objetos y facilitan administración, delegación y aplicación de políticas."
+    },
+    {
+      "id": "ad-09",
+      "category": "OU y estructura lógica",
+      "type": "Escenario",
+      "question": "Una empresa quiere separar Ventas, Finanzas y TI dentro del mismo dominio. ¿Qué recurso resulta apropiado?",
+      "answers": [
+        "Crear un bosque por departamento",
+        "Crear OU para los departamentos",
+        "Crear un DNS por usuario",
+        "Crear un FSMO por departamento"
+      ],
+      "correct": 1,
+      "feedback": "Las OU permiten reflejar estructuras administrativas sin crear dominios adicionales."
+    },
+    {
+      "id": "ad-10",
+      "category": "OU y estructura lógica",
+      "type": "Comparación",
+      "question": "¿Cuál afirmación diferencia correctamente una OU de un grupo?",
+      "answers": [
+        "Una OU organiza y facilita administración; un grupo agrupa identidades para acceso o administración",
+        "Son exactamente lo mismo",
+        "Los grupos contienen dominios",
+        "Las OU son redes físicas"
+      ],
+      "correct": 0,
+      "feedback": "OU y grupos cumplen propósitos distintos dentro de AD."
+    },
+    {
+      "id": "ad-11",
+      "category": "Esquema y topología",
+      "type": "Concepto",
+      "question": "¿Qué define el esquema de Active Directory?",
+      "answers": [
+        "Las direcciones IP de los clientes",
+        "Los tipos de objetos y atributos permitidos",
+        "Las rutas de Internet",
+        "La cantidad de controladores de dominio"
+      ],
+      "correct": 1,
+      "feedback": "El esquema define clases de objetos y sus atributos."
+    },
+    {
+      "id": "ad-12",
+      "category": "Sites y Subredes",
+      "type": "Comparación",
+      "question": "¿Cuál diferencia describe mejor una OU y un Site?",
+      "answers": [
+        "OU representa organización lógica; Site representa principalmente la estructura física de red",
+        "OU y Site son equivalentes",
+        "Site almacena usuarios y OU routers",
+        "OU solo existe fuera de AD"
+      ],
+      "correct": 0,
+      "feedback": "Las OU modelan organización administrativa; los Sites se relacionan con ubicación y conectividad de red."
+    },
+    {
+      "id": "ad-13",
+      "category": "Sites y Subredes",
+      "type": "Escenario",
+      "question": "Quito y Guayaquil tienen subredes distintas conectadas por WAN. ¿Qué concepto de AD ayuda a representar esa distribución física?",
+      "answers": [
+        "OU",
+        "Site",
+        "Grupo",
+        "Schema Master"
+      ],
+      "correct": 1,
+      "feedback": "Los Sites representan ubicaciones de red y ayudan a optimizar autenticación y replicación."
+    },
+    {
+      "id": "ad-14",
+      "category": "Sites y Subredes",
+      "type": "Concepto",
+      "question": "¿Para qué se asocian subredes IP con Sites en Active Directory?",
+      "answers": [
+        "Para identificar la ubicación de red de los equipos",
+        "Para crear usuarios",
+        "Para reemplazar DNS",
+        "Para crear bosques"
+      ],
+      "correct": 0,
+      "feedback": "Las subredes permiten que AD determine a qué Site pertenece un equipo."
+    },
+    {
+      "id": "ad-15",
+      "category": "Árboles y Bosques",
+      "type": "Concepto",
+      "question": "¿Qué es un árbol en Active Directory?",
+      "answers": [
+        "Un conjunto de OU",
+        "Uno o más dominios relacionados mediante un espacio de nombres DNS contiguo",
+        "Un conjunto de switches",
+        "Un único controlador de dominio"
+      ],
+      "correct": 1,
+      "feedback": "Un árbol agrupa dominios relacionados jerárquicamente por su espacio de nombres."
+    },
+    {
+      "id": "ad-16",
+      "category": "Árboles y Bosques",
+      "type": "Escenario",
+      "question": "Si empresa.com tiene el dominio hijo quito.empresa.com, ambos forman parte de:",
+      "answers": [
+        "El mismo árbol",
+        "Dos bosques obligatoriamente",
+        "Dos Workgroups",
+        "Dos esquemas independientes"
+      ],
+      "correct": 0,
+      "feedback": "El dominio hijo comparte un espacio de nombres DNS contiguo con el dominio raíz."
+    },
+    {
+      "id": "ad-17",
+      "category": "Árboles y Bosques",
+      "type": "Concepto",
+      "question": "¿Qué puede contener un bosque de Active Directory?",
+      "answers": [
+        "Solo una OU",
+        "Uno o varios árboles de dominios",
+        "Solo un controlador de dominio",
+        "Solo Sites"
+      ],
+      "correct": 1,
+      "feedback": "Un bosque puede contener uno o varios árboles y constituye la estructura lógica superior de AD."
+    },
+    {
+      "id": "ad-18",
+      "category": "Árboles y Bosques",
+      "type": "Razonamiento",
+      "question": "Una empresa crea departamentos diferentes. ¿Necesita obligatoriamente un dominio para cada departamento?",
+      "answers": [
+        "Sí, siempre",
+        "No; muchas veces puede organizarlos mediante OU dentro del mismo dominio",
+        "Sí, porque una OU admite un solo usuario",
+        "Sí, si utiliza DNS"
+      ],
+      "correct": 1,
+      "feedback": "Separar departamentos no implica necesariamente crear dominios adicionales."
+    },
+    {
+      "id": "ad-19",
+      "category": "Confianzas",
+      "type": "Concepto",
+      "question": "¿Qué permite una relación de confianza entre dominios?",
+      "answers": [
+        "Compartir automáticamente todas las contraseñas",
+        "Permitir autenticación y acceso controlado a recursos entre dominios",
+        "Convertir dominios en OU",
+        "Eliminar DNS"
+      ],
+      "correct": 1,
+      "feedback": "Las confianzas permiten que identidades de un dominio puedan ser reconocidas para acceder a recursos de otro."
+    },
+    {
+      "id": "ad-20",
+      "category": "Confianzas",
+      "type": "⚡ Respuesta relámpago",
+      "question": "En una confianza unidireccional, ¿el acceso funciona necesariamente en ambos sentidos?",
+      "answers": [
+        "Sí",
+        "No",
+        "Solo con Global Catalog",
+        "Solo si ambos son Workgroup"
+      ],
+      "correct": 1,
+      "feedback": "Una confianza unidireccional establece confianza en un solo sentido."
+    },
+    {
+      "id": "ad-21",
+      "category": "Confianzas",
+      "type": "Concepto",
+      "question": "¿Qué significa que una confianza sea transitiva?",
+      "answers": [
+        "Que puede extenderse a través de relaciones entre dominios",
+        "Que solo dura unos minutos",
+        "Que siempre es unidireccional",
+        "Que no requiere autenticación"
+      ],
+      "correct": 0,
+      "feedback": "La transitividad permite que la confianza se extienda a través de dominios relacionados."
+    },
+    {
+      "id": "ad-22",
+      "category": "Controladores de dominio",
+      "type": "Concepto",
+      "question": "¿Qué es un controlador de dominio?",
+      "answers": [
+        "Cualquier PC unido al dominio",
+        "Un servidor con AD DS que presta servicios del dominio",
+        "Un servidor dedicado solo a DHCP",
+        "Una OU especial"
+      ],
+      "correct": 1,
+      "feedback": "Un DC ejecuta AD DS y participa en autenticación y administración del dominio."
+    },
+    {
+      "id": "ad-23",
+      "category": "Controladores de dominio",
+      "type": "Razonamiento",
+      "question": "¿Por qué un dominio puede tener varios controladores de dominio?",
+      "answers": [
+        "Para crear varios esquemas",
+        "Para mejorar disponibilidad, redundancia y distribución del servicio",
+        "Porque cada usuario necesita un DC",
+        "Porque cada OU necesita uno"
+      ],
+      "correct": 1,
+      "feedback": "Varios DC reducen la dependencia de un único servidor y permiten replicación."
+    },
+    {
+      "id": "ad-24",
+      "category": "Controladores de dominio",
+      "type": "Escenario",
+      "question": "SERVER01 y SERVER02 son DC del mismo dominio y replican correctamente. SERVER01 se apaga. ¿Qué puede ocurrir?",
+      "answers": [
+        "El dominio desaparece inmediatamente",
+        "SERVER02 puede continuar prestando muchos servicios de dominio",
+        "Todos los equipos pasan a Workgroup",
+        "Se elimina automáticamente SERVER01"
+      ],
+      "correct": 1,
+      "feedback": "La existencia de varios DC aporta continuidad, aunque ciertas funciones específicas pueden depender de roles concretos."
+    },
+    {
+      "id": "ad-25",
+      "category": "Controladores de dominio",
+      "type": "Comparación",
+      "question": "¿Cuál es la diferencia principal entre dominio y controlador de dominio?",
+      "answers": [
+        "El dominio es una estructura lógica; el DC es un servidor que presta servicios para ese dominio",
+        "Son exactamente lo mismo",
+        "El dominio es físico y el DC lógico",
+        "El DC contiene varios bosques obligatoriamente"
+      ],
+      "correct": 0,
+      "feedback": "El dominio es la estructura lógica; uno o más DC implementan sus servicios."
+    },
+    {
+      "id": "ad-26",
+      "category": "Controladores de dominio",
+      "type": "Escenario",
+      "question": "¿Puede una máquina virtual con Windows Server funcionar como controlador de dominio?",
+      "answers": [
+        "No, un DC debe ser físico",
+        "Sí, los DC pueden virtualizarse si la infraestructura está correctamente diseñada",
+        "Solo si usa Linux",
+        "Solo sin DNS"
+      ],
+      "correct": 1,
+      "feedback": "Los controladores de dominio pueden ejecutarse como máquinas virtuales."
+    },
+    {
+      "id": "ad-27",
+      "category": "Niveles funcionales",
+      "type": "Concepto",
+      "question": "¿Qué determinan principalmente los niveles funcionales de dominio y bosque?",
+      "answers": [
+        "La velocidad de Internet",
+        "Las características de AD disponibles y la compatibilidad con versiones de Windows Server",
+        "La cantidad de RAM del cliente",
+        "El nombre DNS del dominio"
+      ],
+      "correct": 1,
+      "feedback": "Los niveles funcionales condicionan capacidades de AD y compatibilidad entre versiones de controladores de dominio."
+    },
+    {
+      "id": "ad-28",
+      "category": "Global Catalog",
+      "type": "Concepto",
+      "question": "¿Cuál es una función importante del Global Catalog?",
+      "answers": [
+        "Asignar direcciones IP",
+        "Facilitar búsquedas de objetos en todo el bosque usando información parcial",
+        "Crear discos virtuales",
+        "Administrar únicamente impresoras"
+      ],
+      "correct": 1,
+      "feedback": "El GC mantiene información parcial de objetos del bosque para búsquedas y ciertos procesos de autenticación."
+    },
+    {
+      "id": "ad-29",
+      "category": "Global Catalog",
+      "type": "Razonamiento",
+      "question": "¿Por qué el Global Catalog resulta útil en un bosque con varios dominios?",
+      "answers": [
+        "Porque permite buscar información de objetos del bosque sin consultar manualmente cada dominio",
+        "Porque reemplaza todos los DC",
+        "Porque asigna IP públicas",
+        "Porque elimina las confianzas"
+      ],
+      "correct": 0,
+      "feedback": "El GC facilita búsquedas a escala de bosque."
+    },
+    {
+      "id": "ad-30",
+      "category": "Replicación y disponibilidad",
+      "type": "Concepto",
+      "question": "¿Qué permite la replicación entre controladores de dominio?",
+      "answers": [
+        "Mantener sincronizada la información de Active Directory entre DC",
+        "Convertir un Site en OU",
+        "Asignar direcciones IP",
+        "Crear máquinas virtuales"
+      ],
+      "correct": 0,
+      "feedback": "La replicación distribuye cambios del directorio entre controladores de dominio."
+    },
+    {
+      "id": "ad-31",
+      "category": "Replicación y disponibilidad",
+      "type": "Escenario",
+      "question": "Se crea un usuario en un DC y posteriormente aparece en otro DC del mismo dominio. ¿Qué proceso lo explica?",
+      "answers": [
+        "RAID",
+        "Replicación",
+        "DHCP",
+        "NAT"
+      ],
+      "correct": 1,
+      "feedback": "La replicación propaga los cambios de Active Directory entre DC."
+    },
+    {
+      "id": "ad-32",
+      "category": "Replicación y disponibilidad",
+      "type": "Razonamiento",
+      "question": "¿Por qué Sites y enlaces de red son relevantes para la replicación?",
+      "answers": [
+        "Porque permiten considerar la topología física y optimizar el tráfico entre ubicaciones",
+        "Porque sustituyen el esquema",
+        "Porque crean usuarios",
+        "Porque desactivan DNS"
+      ],
+      "correct": 0,
+      "feedback": "La topología de Sites ayuda a controlar cómo se replica AD entre ubicaciones."
+    },
+    {
+      "id": "ad-33",
+      "category": "FSMO",
+      "type": "⚡ Respuesta relámpago",
+      "question": "¿Cuántos roles FSMO existen en Active Directory?",
+      "answers": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correct": 2,
+      "feedback": "Active Directory define cinco roles FSMO."
+    },
+    {
+      "id": "ad-34",
+      "category": "FSMO",
+      "type": "Concepto",
+      "question": "¿Cuál de los siguientes NO es un rol FSMO?",
+      "answers": [
+        "RID Master",
+        "PDC Emulator",
+        "Schema Master",
+        "Global Catalog Master"
+      ],
+      "correct": 3,
+      "feedback": "Global Catalog no es un rol FSMO."
+    },
+    {
+      "id": "ad-35",
+      "category": "FSMO",
+      "type": "Concepto",
+      "question": "¿Qué rol FSMO controla las modificaciones del esquema de Active Directory?",
+      "answers": [
+        "Schema Master",
+        "RID Master",
+        "PDC Emulator",
+        "Infrastructure Master"
+      ],
+      "correct": 0,
+      "feedback": "Schema Master controla las actualizaciones del esquema."
+    },
+    {
+      "id": "ad-36",
+      "category": "FSMO",
+      "type": "Concepto",
+      "question": "¿Qué rol FSMO participa en la asignación de bloques RID a los controladores de dominio?",
+      "answers": [
+        "Domain Naming Master",
+        "RID Master",
+        "Schema Master",
+        "Global Catalog"
+      ],
+      "correct": 1,
+      "feedback": "RID Master asigna bloques RID utilizados para generar identificadores únicos."
+    },
+    {
+      "id": "ad-37",
+      "category": "FSMO",
+      "type": "Concepto",
+      "question": "¿Qué rol FSMO está especialmente relacionado con operaciones sensibles al tiempo y cambios de contraseña?",
+      "answers": [
+        "PDC Emulator",
+        "Schema Master",
+        "Domain Naming Master",
+        "Infrastructure Master"
+      ],
+      "correct": 0,
+      "feedback": "PDC Emulator cumple varias funciones especiales, entre ellas sincronización temporal y tratamiento preferente de cambios de contraseña."
+    },
+    {
+      "id": "ad-38",
+      "category": "FSMO",
+      "type": "Concepto",
+      "question": "¿Qué rol FSMO interviene al agregar o eliminar dominios del bosque?",
+      "answers": [
+        "Domain Naming Master",
+        "RID Master",
+        "PDC Emulator",
+        "Infrastructure Master"
+      ],
+      "correct": 0,
+      "feedback": "Domain Naming Master controla cambios en el espacio de nombres de dominios del bosque."
+    },
+    {
+      "id": "ad-39",
+      "category": "FSMO",
+      "type": "Razonamiento",
+      "question": "¿Es normal que inicialmente los cinco roles FSMO estén alojados en un mismo controlador de dominio?",
+      "answers": [
+        "No, Windows lo impide",
+        "Sí, especialmente en entornos pequeños o instalaciones iniciales",
+        "Solo en Workgroup",
+        "Solo si no existe DNS"
+      ],
+      "correct": 1,
+      "feedback": "Los cinco roles pueden residir en un mismo DC; su distribución depende del diseño y necesidades del entorno."
+    },
+    {
+      "id": "ad-40",
+      "category": "FSMO",
+      "type": "☠️ Todo o nada ×2",
+      "question": "Todos los roles FSMO están en SERVER01 y este falla. ¿Significa que SERVER02 deja inmediatamente de autenticar a todos los usuarios?",
+      "answers": [
+        "Sí, porque FSMO almacena todas las contraseñas",
+        "No necesariamente; muchas operaciones de AD pueden continuar, aunque ciertas funciones dependientes de FSMO se verán afectadas",
+        "Sí, porque desaparece DNS automáticamente",
+        "No, porque los roles FSMO se copian instantáneamente a cualquier PC"
+      ],
+      "correct": 1,
+      "feedback": "Los FSMO son roles especializados. La pérdida de su titular no implica que toda autenticación se detenga de inmediato.",
+      "multiplier": 2
+    }
+  ]
+}
