@@ -23,12 +23,12 @@
       "type": "Comparación",
       "question": "¿Qué relación representa mejor un sistema informático completo?",
       "answers": [
-        "Hardware + software + personas",
         "CPU + Internet únicamente",
+        "Hardware + software + personas",
         "RAM + disco únicamente",
         "Software + BIOS únicamente"
       ],
-      "correct": 0,
+      "correct": 1,
       "feedback": "El sistema informático integra componentes físicos, lógicos y usuarios."
     },
     {
@@ -37,12 +37,12 @@
       "type": "Concepto",
       "question": "En la arquitectura de Von Neumann, ¿dónde se almacenan normalmente instrucciones y datos durante la ejecución?",
       "answers": [
-        "En la memoria principal",
         "Solo en la ALU",
         "Solo en el disco duro",
+        "En la memoria principal",
         "En el monitor"
       ],
-      "correct": 0,
+      "correct": 2,
       "feedback": "La arquitectura de Von Neumann usa memoria para almacenar instrucciones y datos."
     },
     {
@@ -51,12 +51,12 @@
       "type": "Concepto",
       "question": "¿Qué componente de la CPU ejecuta operaciones aritméticas y lógicas?",
       "answers": [
-        "ALU",
         "BIOS",
         "SSD",
-        "Bus de direcciones"
+        "Bus de direcciones",
+        "ALU"
       ],
-      "correct": 0,
+      "correct": 3,
       "feedback": "La ALU realiza operaciones aritméticas y lógicas."
     },
     {
@@ -79,12 +79,12 @@
       "type": "⚡ Respuesta relámpago",
       "question": "¿Qué registro guarda la dirección de la siguiente instrucción que debe ejecutarse?",
       "answers": [
-        "PC o contador de programa",
         "IR o registro de instrucción",
+        "PC o contador de programa",
         "Registro de estado",
         "Registro de datos"
       ],
-      "correct": 0,
+      "correct": 1,
       "feedback": "El PC apunta a la siguiente instrucción que debe buscarse."
     },
     {
@@ -93,12 +93,12 @@
       "type": "Comparación",
       "question": "¿Cuál diferencia correctamente el PC del IR?",
       "answers": [
-        "El PC guarda la dirección de la próxima instrucción; el IR mantiene la instrucción actual",
         "El PC guarda datos y el IR direcciones IP",
         "Ambos contienen exactamente la misma información",
+        "El PC guarda la dirección de la próxima instrucción; el IR mantiene la instrucción actual",
         "El IR almacena permanentemente el programa"
       ],
-      "correct": 0,
+      "correct": 2,
       "feedback": "PC e IR participan en etapas distintas del ciclo de instrucción."
     },
     {
@@ -107,12 +107,12 @@
       "type": "Concepto",
       "question": "¿Cuál es el orden conceptual correcto del ciclo de instrucción?",
       "answers": [
-        "Fetch → Decode → Execute",
         "Decode → Execute → Fetch",
         "Execute → Fetch → Decode",
-        "Store → Boot → Decode"
+        "Store → Boot → Decode",
+        "Fetch → Decode → Execute"
       ],
-      "correct": 0,
+      "correct": 3,
       "feedback": "La CPU busca la instrucción, la decodifica y luego la ejecuta."
     },
     {
@@ -135,12 +135,12 @@
       "type": "Razonamiento",
       "question": "Dos procesadores funcionan a la misma frecuencia. ¿Por qué podrían tener distinto rendimiento?",
       "answers": [
-        "Porque también influyen IPC, arquitectura, caché y otros factores",
         "Porque la frecuencia siempre determina todo el rendimiento",
+        "Porque también influyen IPC, arquitectura, caché y otros factores",
         "Porque el que tenga más almacenamiento siempre será más rápido",
         "Porque el monitor define la velocidad del CPU"
       ],
-      "correct": 0,
+      "correct": 1,
       "feedback": "La frecuencia no explica por sí sola el rendimiento real de un procesador."
     },
     {
@@ -149,12 +149,12 @@
       "type": "Concepto",
       "question": "¿Qué representa el IPC de un procesador?",
       "answers": [
-        "La cantidad aproximada de instrucciones ejecutadas por ciclo",
         "La capacidad del disco en bytes",
         "La velocidad de Internet",
+        "La cantidad aproximada de instrucciones ejecutadas por ciclo",
         "La cantidad de usuarios conectados"
       ],
-      "correct": 0,
+      "correct": 2,
       "feedback": "IPC relaciona cuántas instrucciones puede completar el procesador por ciclo."
     },
     {
@@ -163,12 +163,12 @@
       "type": "Comparación",
       "question": "¿Cuál diferencia mejor un núcleo físico de un procesador lógico?",
       "answers": [
-        "Un núcleo es una unidad física de ejecución; un procesador lógico es una unidad visible para el SO",
         "Son siempre exactamente lo mismo",
         "Un procesador lógico es un disco virtual",
-        "Un núcleo físico solo existe en servidores"
+        "Un núcleo físico solo existe en servidores",
+        "Un núcleo es una unidad física de ejecución; un procesador lógico es una unidad visible para el SO"
       ],
-      "correct": 0,
+      "correct": 3,
       "feedback": "Tecnologías como SMT pueden hacer que un núcleo físico exponga más de un procesador lógico."
     },
     {
@@ -191,12 +191,12 @@
       "type": "Razonamiento",
       "question": "¿Cuál afirmación es más adecuada sobre CISC y RISC en procesadores modernos?",
       "answers": [
-        "Las diferencias conceptuales siguen siendo útiles, aunque las implementaciones modernas mezclan técnicas",
         "Hoy ya no existe ninguna diferencia conceptual",
+        "Las diferencias conceptuales siguen siendo útiles, aunque las implementaciones modernas mezclan técnicas",
         "Todo procesador moderno es exclusivamente RISC",
         "Todo procesador moderno es exclusivamente CISC"
       ],
-      "correct": 0,
+      "correct": 1,
       "feedback": "Las arquitecturas modernas pueden combinar ideas, aunque la distinción conceptual sigue siendo útil."
     },
     {
@@ -205,12 +205,12 @@
       "type": "Concepto",
       "question": "¿Cuál es el orden correcto desde la memoria más cercana y rápida al CPU hacia la de mayor capacidad?",
       "answers": [
-        "Registros → caché → RAM → almacenamiento secundario",
         "SSD → RAM → caché → registros",
         "RAM → registros → SSD → caché",
+        "Registros → caché → RAM → almacenamiento secundario",
         "Caché → SSD → registros → RAM"
       ],
-      "correct": 0,
+      "correct": 2,
       "feedback": "La jerarquía sacrifica velocidad a cambio de mayor capacidad al descender de nivel."
     },
     {
@@ -219,12 +219,12 @@
       "type": "Razonamiento",
       "question": "¿Por qué existe una jerarquía de memoria en un computador?",
       "answers": [
-        "Porque no es posible maximizar al mismo tiempo velocidad, capacidad y bajo costo en una sola tecnología",
         "Porque toda la memoria debe tener la misma velocidad",
         "Porque los discos son siempre más rápidos que los registros",
-        "Porque la RAM reemplaza completamente a la caché"
+        "Porque la RAM reemplaza completamente a la caché",
+        "Porque no es posible maximizar al mismo tiempo velocidad, capacidad y bajo costo en una sola tecnología"
       ],
-      "correct": 0,
+      "correct": 3,
       "feedback": "La jerarquía equilibra velocidad, capacidad y costo."
     },
     {
@@ -247,12 +247,12 @@
       "type": "Comparación",
       "question": "¿Cuál afirmación diferencia mejor RAM y almacenamiento secundario?",
       "answers": [
-        "La RAM es volátil y se usa durante la ejecución; el almacenamiento secundario conserva información",
         "La RAM es siempre más lenta que un disco duro",
+        "La RAM es volátil y se usa durante la ejecución; el almacenamiento secundario conserva información",
         "Ambos pierden la información al apagar el equipo",
         "El almacenamiento secundario solo puede contener instrucciones"
       ],
-      "correct": 0,
+      "correct": 1,
       "feedback": "RAM y almacenamiento cumplen funciones diferentes dentro de la jerarquía."
     },
     {
@@ -261,12 +261,12 @@
       "type": "Concepto",
       "question": "¿Qué bus transporta principalmente los datos entre CPU, memoria y dispositivos?",
       "answers": [
-        "Bus de datos",
         "Bus de direcciones",
         "Bus de control exclusivamente",
+        "Bus de datos",
         "Bus de arranque"
       ],
-      "correct": 0,
+      "correct": 2,
       "feedback": "El bus de datos transporta la información intercambiada por los componentes."
     },
     {
@@ -275,12 +275,12 @@
       "type": "Concepto",
       "question": "¿Qué determina principalmente el ancho del bus de direcciones?",
       "answers": [
-        "La cantidad máxima de posiciones de memoria que pueden direccionarse",
         "La velocidad del ventilador",
         "La resolución del monitor",
-        "La capacidad de la batería"
+        "La capacidad de la batería",
+        "La cantidad máxima de posiciones de memoria que pueden direccionarse"
       ],
-      "correct": 0,
+      "correct": 3,
       "feedback": "Más bits de dirección permiten identificar más posiciones de memoria."
     },
     {
@@ -303,12 +303,12 @@
       "type": "Concepto",
       "question": "¿Qué función cumple un controlador de periférico?",
       "answers": [
-        "Facilitar la comunicación entre el periférico y el sistema",
         "Reemplazar la CPU",
+        "Facilitar la comunicación entre el periférico y el sistema",
         "Guardar el sistema operativo",
         "Incrementar la capacidad de la RAM"
       ],
-      "correct": 0,
+      "correct": 1,
       "feedback": "Los controladores adaptan la comunicación entre periféricos y el sistema."
     },
     {
@@ -317,12 +317,12 @@
       "type": "Escenario",
       "question": "La CPU consulta continuamente si un dispositivo está listo. ¿Qué mecanismo de E/S representa?",
       "answers": [
-        "Sondeo o polling",
         "DMA",
         "RAID",
+        "Sondeo o polling",
         "Caché asociativa"
       ],
-      "correct": 0,
+      "correct": 2,
       "feedback": "En polling la CPU consulta repetidamente el estado del dispositivo."
     },
     {
@@ -331,12 +331,12 @@
       "type": "Escenario",
       "question": "Un dispositivo avisa a la CPU cuando necesita atención. ¿Qué mecanismo se está usando?",
       "answers": [
-        "Interrupción",
         "RAID 0",
         "BIOS Legacy",
-        "Caché L3"
+        "Caché L3",
+        "Interrupción"
       ],
-      "correct": 0,
+      "correct": 3,
       "feedback": "Las interrupciones permiten que el dispositivo solicite atención cuando está listo."
     },
     {
@@ -359,12 +359,12 @@
       "type": "Comparación",
       "question": "¿Cuál diferencia básica existe entre un HDD y un SSD?",
       "answers": [
-        "El HDD usa almacenamiento magnético con partes mecánicas; el SSD usa memoria flash",
         "El SSD necesita cinta magnética",
+        "El HDD usa almacenamiento magnético con partes mecánicas; el SSD usa memoria flash",
         "El HDD es memoria volátil y el SSD no",
         "Ambos utilizan exactamente la misma tecnología"
       ],
-      "correct": 0,
+      "correct": 1,
       "feedback": "HDD y SSD emplean tecnologías de almacenamiento diferentes."
     },
     {
@@ -373,12 +373,12 @@
       "type": "Escenario",
       "question": "¿Por qué un programa almacenado en un SSD normalmente debe pasar a RAM para ejecutarse?",
       "answers": [
-        "Porque la CPU trabaja durante la ejecución con instrucciones y datos cargados en memoria principal",
         "Porque el SSD solo funciona cuando el equipo está apagado",
         "Porque la RAM es almacenamiento permanente",
+        "Porque la CPU trabaja durante la ejecución con instrucciones y datos cargados en memoria principal",
         "Porque la BIOS ejecuta todos los programas"
       ],
-      "correct": 0,
+      "correct": 2,
       "feedback": "La memoria principal sirve como espacio de trabajo activo para programas en ejecución."
     },
     {
@@ -387,12 +387,12 @@
       "type": "Concepto",
       "question": "¿Cuál es una función fundamental de BIOS/UEFI al encender el computador?",
       "answers": [
-        "Inicializar hardware y preparar el proceso de arranque",
         "Ejecutar todas las aplicaciones del usuario",
         "Sustituir el sistema operativo",
-        "Administrar archivos compartidos de red"
+        "Administrar archivos compartidos de red",
+        "Inicializar hardware y preparar el proceso de arranque"
       ],
-      "correct": 0,
+      "correct": 3,
       "feedback": "BIOS/UEFI inicializa el hardware y da paso al proceso de arranque."
     },
     {
@@ -415,12 +415,12 @@
       "type": "Concepto",
       "question": "¿Qué objetivo tiene Secure Boot en sistemas UEFI?",
       "answers": [
-        "Ayudar a impedir el arranque de software no autorizado o no confiable",
         "Aumentar la memoria RAM",
+        "Ayudar a impedir el arranque de software no autorizado o no confiable",
         "Reemplazar el almacenamiento",
         "Crear copias RAID"
       ],
-      "correct": 0,
+      "correct": 1,
       "feedback": "Secure Boot verifica componentes del proceso de arranque antes de ejecutarlos."
     },
     {
@@ -429,12 +429,12 @@
       "type": "Concepto",
       "question": "¿Qué es un centro de procesamiento de datos (CPD/Data Center)?",
       "answers": [
-        "Una instalación diseñada para alojar y operar infraestructura tecnológica y servicios",
         "Un único computador personal de alto rendimiento",
         "Una copia de seguridad en USB",
+        "Una instalación diseñada para alojar y operar infraestructura tecnológica y servicios",
         "Un sistema operativo para servidores"
       ],
-      "correct": 0,
+      "correct": 2,
       "feedback": "Un CPD integra servidores, red, almacenamiento, energía, climatización y seguridad."
     },
     {
@@ -443,12 +443,12 @@
       "type": "Razonamiento",
       "question": "¿Por qué la redundancia es importante en un Data Center?",
       "answers": [
-        "Porque reduce puntos únicos de falla y mejora continuidad del servicio",
         "Porque elimina la necesidad de refrigeración",
         "Porque duplica siempre el rendimiento del CPU",
-        "Porque reemplaza todas las copias de seguridad"
+        "Porque reemplaza todas las copias de seguridad",
+        "Porque reduce puntos únicos de falla y mejora continuidad del servicio"
       ],
-      "correct": 0,
+      "correct": 3,
       "feedback": "La redundancia permite mantener servicios cuando falla un componente."
     },
     {
@@ -471,12 +471,12 @@
       "type": "Concepto",
       "question": "¿Qué ventaja principal ofrece un clúster de servidores?",
       "answers": [
-        "Permitir que varios servidores colaboren para mejorar disponibilidad o capacidad",
         "Convertir discos HDD en SSD",
+        "Permitir que varios servidores colaboren para mejorar disponibilidad o capacidad",
         "Eliminar la necesidad de red",
         "Reemplazar la energía eléctrica"
       ],
-      "correct": 0,
+      "correct": 1,
       "feedback": "Un clúster coordina varios nodos para prestar servicios de forma conjunta."
     },
     {
@@ -485,12 +485,12 @@
       "type": "Comparación",
       "question": "¿Qué caracteriza a RAID 0?",
       "answers": [
-        "Distribuye datos entre discos para rendimiento, pero no ofrece redundancia",
         "Duplica todos los datos en cada disco",
         "Usa paridad y tolera siempre dos fallos",
+        "Distribuye datos entre discos para rendimiento, pero no ofrece redundancia",
         "Es un sistema de archivos de red"
       ],
-      "correct": 0,
+      "correct": 2,
       "feedback": "RAID 0 usa striping y no proporciona tolerancia a fallos."
     },
     {
@@ -499,12 +499,12 @@
       "type": "Comparación",
       "question": "¿Qué caracteriza a RAID 1?",
       "answers": [
-        "Mantiene copias espejo de los datos",
         "Elimina toda redundancia",
         "Distribuye datos sin copia",
-        "Solo funciona con cintas"
+        "Solo funciona con cintas",
+        "Mantiene copias espejo de los datos"
       ],
-      "correct": 0,
+      "correct": 3,
       "feedback": "RAID 1 utiliza mirroring para conservar una copia de los datos."
     },
     {
@@ -527,12 +527,12 @@
       "type": "Comparación",
       "question": "¿Cuál diferencia conceptual principal existe entre NAS y SAN?",
       "answers": [
-        "NAS ofrece archivos por red; SAN presenta almacenamiento a nivel de bloques",
         "NAS no usa red y SAN sí",
+        "NAS ofrece archivos por red; SAN presenta almacenamiento a nivel de bloques",
         "SAN solo sirve para usuarios domésticos",
         "Ambos significan exactamente lo mismo"
       ],
-      "correct": 0,
+      "correct": 1,
       "feedback": "NAS trabaja normalmente a nivel de archivos y SAN a nivel de bloques."
     },
     {
@@ -541,12 +541,12 @@
       "type": "Escenario",
       "question": "Se corta la energía comercial de un Data Center. ¿Qué combinación ayuda mejor a mantener la continuidad?",
       "answers": [
-        "UPS para respuesta inmediata y generador para respaldo prolongado",
         "RAID 0 y NAS",
         "Caché L1 y L2",
+        "UPS para respuesta inmediata y generador para respaldo prolongado",
         "BIOS y UEFI"
       ],
-      "correct": 0,
+      "correct": 2,
       "feedback": "UPS y generador cubren escalas de tiempo diferentes ante una falla eléctrica."
     },
     {
@@ -555,12 +555,12 @@
       "type": "Concepto",
       "question": "¿Por qué se separan pasillos fríos y calientes en un Data Center?",
       "answers": [
-        "Para gestionar mejor el flujo de aire y la refrigeración",
         "Para separar usuarios administradores",
         "Para aumentar la capacidad de los discos",
-        "Para mejorar la resolución de pantalla"
+        "Para mejorar la resolución de pantalla",
+        "Para gestionar mejor el flujo de aire y la refrigeración"
       ],
-      "correct": 0,
+      "correct": 3,
       "feedback": "La separación reduce mezcla de aire y mejora la eficiencia de refrigeración."
     },
     {
@@ -583,12 +583,12 @@
       "type": "Comparación",
       "question": "¿Qué característica se asocia normalmente a un Data Center Tier III?",
       "answers": [
-        "Infraestructura concurrentemente mantenible",
         "Ausencia de redundancia",
+        "Infraestructura concurrentemente mantenible",
         "Tolerancia absoluta a cualquier falla",
         "Uso obligatorio de RAID 0"
       ],
-      "correct": 0,
+      "correct": 1,
       "feedback": "Tier III se asocia con mantenimiento concurrente sin detener el servicio previsto."
     },
     {
@@ -597,12 +597,12 @@
       "type": "Concepto",
       "question": "¿Qué característica se asocia normalmente a un Data Center Tier IV?",
       "answers": [
-        "Tolerancia a fallos",
         "Una sola ruta eléctrica",
         "Ausencia de redundancia",
+        "Tolerancia a fallos",
         "Solo almacenamiento NAS"
       ],
-      "correct": 0,
+      "correct": 2,
       "feedback": "Tier IV incorpora tolerancia a fallos en su diseño."
     },
     {
@@ -611,12 +611,12 @@
       "type": "☠️ Todo o nada ×2",
       "question": "Un servidor tiene RAID, UPS y discos operativos, pero falla su única conexión de red. ¿Cuál es la mejor conclusión?",
       "answers": [
-        "La disponibilidad depende del sistema completo, no de un solo componente",
         "RAID reemplaza automáticamente a la red",
         "La UPS debería restaurar la conectividad",
-        "El servidor sigue disponible para los usuarios porque los discos funcionan"
+        "El servidor sigue disponible para los usuarios porque los discos funcionan",
+        "La disponibilidad depende del sistema completo, no de un solo componente"
       ],
-      "correct": 0,
+      "correct": 3,
       "feedback": "La disponibilidad depende de todos los componentes necesarios para prestar el servicio.",
       "multiplier": 2
     },
@@ -640,12 +640,12 @@
       "type": "Escenario",
       "question": "Un estudiante afirma: «Más GHz siempre significa un procesador más rápido». ¿Cuál respuesta es más correcta?",
       "answers": [
-        "No necesariamente; también importan IPC, núcleos, caché, arquitectura y carga de trabajo",
         "Sí, siempre y sin excepciones",
+        "No necesariamente; también importan IPC, núcleos, caché, arquitectura y carga de trabajo",
         "Solo importa la cantidad de almacenamiento",
         "La velocidad depende únicamente de la RAM"
       ],
-      "correct": 0,
+      "correct": 1,
       "feedback": "La frecuencia es importante, pero no permite comparar por sí sola procesadores diferentes."
     }
   ]
