@@ -1,0 +1,287 @@
+{
+  "id": "cli",
+  "title": "Terminal Battle · Linux vs. Windows",
+  "questionsPerGame": 20,
+  "questions": [
+    {
+      "id": "cli-01",
+      "category": "Linux · Navegación",
+      "type": "Comando",
+      "question": "En Linux, ¿qué comando muestra la ruta completa del directorio actual?",
+      "answers": [
+        "pwd",
+        "ls",
+        "cd",
+        "whoami"
+      ],
+      "correct": 0,
+      "feedback": "pwd imprime el directorio de trabajo actual."
+    },
+    {
+      "id": "cli-02",
+      "category": "Linux · Navegación",
+      "type": "Escenario",
+      "question": "Estás en /home/estudiante y quieres entrar a la carpeta Documentos. ¿Qué comando ejecutas?",
+      "answers": [
+        "ls Documentos",
+        "cd Documentos",
+        "pwd Documentos",
+        "mkdir Documentos"
+      ],
+      "correct": 1,
+      "feedback": "cd cambia el directorio actual."
+    },
+    {
+      "id": "cli-03",
+      "category": "Linux · Archivos",
+      "type": "Comando",
+      "question": "¿Qué comando lista también los archivos ocultos en Linux?",
+      "answers": [
+        "ls -a",
+        "ls -h",
+        "cat -a",
+        "pwd -a"
+      ],
+      "correct": 0,
+      "feedback": "ls -a incluye entradas que comienzan con punto."
+    },
+    {
+      "id": "cli-04",
+      "category": "Linux · Archivos",
+      "type": "Escenario",
+      "question": "Necesitas crear una carpeta llamada practicas en el directorio actual. ¿Cuál es el comando?",
+      "answers": [
+        "touch practicas",
+        "cd practicas",
+        "mkdir practicas",
+        "cat practicas"
+      ],
+      "correct": 2,
+      "feedback": "mkdir crea directorios."
+    },
+    {
+      "id": "cli-05",
+      "category": "Linux · Archivos",
+      "type": "Comando",
+      "question": "¿Qué comando crea un archivo vacío llamado notas.txt si todavía no existe?",
+      "answers": [
+        "touch notas.txt",
+        "mkdir notas.txt",
+        "ls notas.txt",
+        "cd notas.txt"
+      ],
+      "correct": 0,
+      "feedback": "touch crea un archivo vacío si no existe; si existe, actualiza marcas de tiempo."
+    },
+    {
+      "id": "cli-06",
+      "category": "Linux · Archivos",
+      "type": "Escenario",
+      "question": "Quieres copiar informe.txt a la carpeta respaldo sin eliminar el original. ¿Qué comando usarías?",
+      "answers": [
+        "mv informe.txt respaldo/",
+        "cp informe.txt respaldo/",
+        "rm informe.txt respaldo/",
+        "cd informe.txt respaldo/"
+      ],
+      "correct": 1,
+      "feedback": "cp copia el archivo, preservando el original."
+    },
+    {
+      "id": "cli-07",
+      "category": "Linux · Archivos",
+      "type": "Comando",
+      "question": "¿Qué comando permite ver directamente el contenido de un archivo de texto en la terminal?",
+      "answers": [
+        "cat notas.txt",
+        "cd notas.txt",
+        "mkdir notas.txt",
+        "pwd notas.txt"
+      ],
+      "correct": 0,
+      "feedback": "cat muestra el contenido del archivo en la salida estándar."
+    },
+    {
+      "id": "cli-08",
+      "category": "Linux · Permisos",
+      "type": "Escenario",
+      "question": "El comando ls -l muestra -rwxr-xr--. ¿Qué puede hacer el propietario del archivo?",
+      "answers": [
+        "Solo leer",
+        "Leer y ejecutar, pero no escribir",
+        "Leer, escribir y ejecutar",
+        "Solo escribir"
+      ],
+      "correct": 2,
+      "feedback": "Los tres primeros permisos rwx corresponden al propietario."
+    },
+    {
+      "id": "cli-09",
+      "category": "Linux · Procesos",
+      "type": "Comando",
+      "question": "¿Qué comando muestra una lista de procesos en ejecución en Linux en el instante actual?",
+      "answers": [
+        "ps aux",
+        "mkdir -p",
+        "ipconfig",
+        "echo $PATH"
+      ],
+      "correct": 0,
+      "feedback": "ps aux presenta información de procesos del sistema."
+    },
+    {
+      "id": "cli-10",
+      "category": "Linux · Redes",
+      "type": "Escenario",
+      "question": "Necesitas comprobar si un servidor responde a mensajes ICMP desde Linux. ¿Qué comando es adecuado?",
+      "answers": [
+        "chmod servidor",
+        "ping servidor",
+        "cd servidor",
+        "touch servidor"
+      ],
+      "correct": 1,
+      "feedback": "ping envía solicitudes ICMP Echo para comprobar conectividad, si están permitidas."
+    },
+    {
+      "id": "cli-11",
+      "category": "Windows · CMD",
+      "type": "Comando",
+      "question": "En Windows CMD, ¿qué comando muestra la configuración IP del equipo?",
+      "answers": [
+        "ipconfig",
+        "ls -l",
+        "chmod",
+        "who"
+      ],
+      "correct": 0,
+      "feedback": "ipconfig muestra direcciones IP y datos de adaptadores."
+    },
+    {
+      "id": "cli-12",
+      "category": "Windows · CMD",
+      "type": "Escenario",
+      "question": "Estás en C:\\Usuarios y necesitas cambiar a la carpeta C:\\Usuarios\\Alumno en CMD. ¿Qué comando usarías?",
+      "answers": [
+        "dir Alumno",
+        "cd Alumno",
+        "type Alumno",
+        "copy Alumno"
+      ],
+      "correct": 1,
+      "feedback": "cd permite cambiar al subdirectorio indicado."
+    },
+    {
+      "id": "cli-13",
+      "category": "Windows · CMD",
+      "type": "Comando",
+      "question": "¿Qué comando de CMD lista los archivos y carpetas del directorio actual?",
+      "answers": [
+        "dir",
+        "pwd",
+        "ipconfig",
+        "cls"
+      ],
+      "correct": 0,
+      "feedback": "dir muestra el contenido del directorio."
+    },
+    {
+      "id": "cli-14",
+      "category": "Windows · CMD",
+      "type": "Escenario",
+      "question": "En CMD deseas crear una carpeta llamada Proyecto. ¿Cuál es el comando?",
+      "answers": [
+        "type Proyecto",
+        "del Proyecto",
+        "mkdir Proyecto",
+        "ping Proyecto"
+      ],
+      "correct": 2,
+      "feedback": "mkdir (o md) crea una carpeta."
+    },
+    {
+      "id": "cli-15",
+      "category": "Windows · CMD",
+      "type": "Comando",
+      "question": "¿Qué comando muestra el contenido de un archivo de texto en CMD?",
+      "answers": [
+        "type informe.txt",
+        "copy informe.txt",
+        "rename informe.txt",
+        "cd informe.txt"
+      ],
+      "correct": 0,
+      "feedback": "type imprime el contenido de archivos de texto."
+    },
+    {
+      "id": "cli-16",
+      "category": "Windows · CMD",
+      "type": "Escenario",
+      "question": "Quieres saber con qué cuenta de usuario se ejecuta la consola de Windows. ¿Qué comando es adecuado?",
+      "answers": [
+        "hostname",
+        "whoami",
+        "tasklist",
+        "netstat"
+      ],
+      "correct": 1,
+      "feedback": "whoami muestra la identidad del usuario actual."
+    },
+    {
+      "id": "cli-17",
+      "category": "Windows · CMD",
+      "type": "Comando",
+      "question": "¿Qué comando de CMD muestra los procesos activos en Windows?",
+      "answers": [
+        "tasklist",
+        "dir",
+        "tracert",
+        "diskpart"
+      ],
+      "correct": 0,
+      "feedback": "tasklist enumera los procesos en ejecución."
+    },
+    {
+      "id": "cli-18",
+      "category": "Windows · Redes",
+      "type": "Escenario",
+      "question": "Necesitas consultar qué dirección IP resuelve el nombre www.uide.edu.ec en Windows. ¿Qué comando es el más directo?",
+      "answers": [
+        "nslookup www.uide.edu.ec",
+        "hostname www.uide.edu.ec",
+        "mkdir www.uide.edu.ec",
+        "cls www.uide.edu.ec"
+      ],
+      "correct": 0,
+      "feedback": "nslookup consulta la resolución DNS del nombre."
+    },
+    {
+      "id": "cli-19",
+      "category": "PowerShell · Conceptos",
+      "type": "Comando",
+      "question": "¿Qué instrucción de PowerShell enumera servicios y sus estados?",
+      "answers": [
+        "Get-Service",
+        "Get-Location",
+        "New-Item",
+        "Set-Location"
+      ],
+      "correct": 0,
+      "feedback": "Get-Service devuelve objetos que representan servicios del sistema."
+    },
+    {
+      "id": "cli-20",
+      "category": "Linux y Windows · Comparación",
+      "type": "Razonamiento",
+      "question": "¿Cuál de estas parejas sirve para conocer la ubicación actual en Linux Bash y PowerShell, respectivamente?",
+      "answers": [
+        "pwd y Get-Location",
+        "dir y Get-Service",
+        "ping y tasklist",
+        "mkdir e ipconfig"
+      ],
+      "correct": 0,
+      "feedback": "pwd muestra la ruta actual en Bash y Get-Location hace lo propio en PowerShell."
+    }
+  ]
+}
