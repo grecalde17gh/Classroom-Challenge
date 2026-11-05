@@ -1,0 +1,343 @@
+{
+  "id": "repaso-2",
+  "title": "Repaso segundo parcial · Arquitectura",
+  "questionsPerGame": 24,
+  "questions": [
+    {
+      "id": "rep2-b1_q01",
+      "category": "Sistemas operativos",
+      "type": "Repaso",
+      "question": "¿Cuál es la función principal del núcleo (kernel) de un sistema operativo?",
+      "answers": [
+        "Administrar recursos del hardware y ofrecer servicios a los programas",
+        "Reemplazar las aplicaciones instaladas",
+        "Almacenar permanentemente todos los archivos del usuario",
+        "Diseñar físicamente los circuitos del procesador"
+      ],
+      "correct": 0,
+      "feedback": "El kernel coordina CPU, memoria, dispositivos y servicios del sistema."
+    },
+    {
+      "id": "rep2-b1_q02",
+      "category": "Sistemas operativos",
+      "type": "Repaso",
+      "question": "¿Qué describe mejor la diferencia entre un proceso y un programa?",
+      "answers": [
+        "Un proceso es un programa en ejecución",
+        "Un proceso no utiliza memoria",
+        "Un programa solo existe dentro del procesador",
+        "Un proceso es siempre un archivo comprimido"
+      ],
+      "correct": 0,
+      "feedback": "El programa contiene instrucciones; el proceso es su instancia en ejecución."
+    },
+    {
+      "id": "rep2-b1_q03",
+      "category": "Sistemas operativos",
+      "type": "Repaso",
+      "question": "Si varias aplicaciones están abiertas, ¿qué componente decide cuál obtiene tiempo de CPU?",
+      "answers": [
+        "El monitor",
+        "El planificador de procesos del sistema operativo",
+        "El teclado",
+        "El sistema de archivos"
+      ],
+      "correct": 1,
+      "feedback": "El planificador distribuye el tiempo de procesador entre procesos o hilos."
+    },
+    {
+      "id": "rep2-b1_q04",
+      "category": "Sistemas operativos",
+      "type": "Repaso",
+      "question": "¿Qué sucede normalmente cuando la memoria RAM disponible resulta insuficiente?",
+      "answers": [
+        "La CPU aumenta automáticamente sus núcleos físicos",
+        "Los archivos del disco se convierten en registros",
+        "El sistema elimina obligatoriamente el kernel",
+        "El sistema puede usar memoria virtual, con posible reducción de rendimiento"
+      ],
+      "correct": 3,
+      "feedback": "La memoria virtual puede usar almacenamiento secundario, más lento que RAM."
+    },
+    {
+      "id": "rep2-b1_q05",
+      "category": "Sistemas operativos",
+      "type": "Repaso",
+      "question": "¿Qué es un sistema de archivos?",
+      "answers": [
+        "Una aplicación para editar fotografías",
+        "La estructura y reglas con que se organizan archivos y directorios en un volumen",
+        "Una conexión física entre monitor y computadora",
+        "Un tipo de procesador"
+      ],
+      "correct": 1,
+      "feedback": "El sistema de archivos organiza y permite acceder a los datos almacenados."
+    },
+    {
+      "id": "rep2-b1_q06",
+      "category": "Sistemas operativos",
+      "type": "Repaso",
+      "question": "¿Cuál es una característica distintiva de Linux?",
+      "answers": [
+        "No permite utilizar una terminal",
+        "Solo funciona en computadoras Apple",
+        "Existen múltiples distribuciones que comparten el kernel Linux",
+        "Es exclusivamente un sistema operativo para teléfonos"
+      ],
+      "correct": 2,
+      "feedback": "Linux es el núcleo usado por distribuciones como Ubuntu y Fedora."
+    },
+    {
+      "id": "rep2-b1_q07",
+      "category": "Sistemas operativos",
+      "type": "Repaso",
+      "question": "¿Cuál de los siguientes sistemas operativos es desarrollado por Apple para sus computadoras Mac?",
+      "answers": [
+        "macOS",
+        "Debian",
+        "Windows Server",
+        "Ubuntu"
+      ],
+      "correct": 0,
+      "feedback": "macOS es el sistema operativo de la familia Mac."
+    },
+    {
+      "id": "rep2-b1_q08",
+      "category": "Sistemas operativos",
+      "type": "Repaso",
+      "question": "¿Qué función cumplen los controladores o drivers de dispositivos?",
+      "answers": [
+        "Sustituyen el sistema de archivos",
+        "Permiten que el sistema operativo se comunique con hardware específico",
+        "Convierten todos los programas en código fuente",
+        "Aumentan físicamente la memoria RAM"
+      ],
+      "correct": 1,
+      "feedback": "Los drivers proporcionan una interfaz de comunicación con los dispositivos."
+    },
+    {
+      "id": "rep2-b1_q09",
+      "category": "Sistemas operativos",
+      "type": "Repaso",
+      "question": "¿Qué diferencia fundamental existe entre una interfaz gráfica (GUI) y una interfaz de línea de comandos (CLI)?",
+      "answers": [
+        "La CLI solo existe en Windows",
+        "La CLI no puede administrar archivos",
+        "La GUI usa elementos visuales; la CLI recibe instrucciones escritas",
+        "La GUI funciona sin sistema operativo"
+      ],
+      "correct": 2,
+      "feedback": "GUI y CLI son dos formas de interactuar con el sistema."
+    },
+    {
+      "id": "rep2-b1_q10",
+      "category": "Sistemas operativos",
+      "type": "Repaso",
+      "question": "¿Cuál es el objetivo de los permisos de archivos y directorios en un sistema operativo?",
+      "answers": [
+        "Aumentar la frecuencia del procesador",
+        "Controlar quién puede leer, modificar o ejecutar recursos",
+        "Cambiar el tamaño físico del disco",
+        "Impedir que existan varios usuarios"
+      ],
+      "correct": 1,
+      "feedback": "Los permisos regulan el acceso a recursos del sistema."
+    },
+    {
+      "id": "rep2-b1_q11",
+      "category": "Sistemas operativos",
+      "type": "Repaso",
+      "question": "¿Cuál es un ejemplo de sistema operativo de propósito general para computadoras personales?",
+      "answers": [
+        "Windows 11",
+        "Microsoft Word",
+        "Un controlador de impresora",
+        "BIOS/UEFI"
+      ],
+      "correct": 0,
+      "feedback": "Windows 11 es un SO; los demás elementos cumplen otras funciones."
+    },
+    {
+      "id": "rep2-b1_q12",
+      "category": "Sistemas operativos",
+      "type": "Repaso",
+      "question": "Durante el arranque, ¿cuál es la relación correcta entre firmware y sistema operativo?",
+      "answers": [
+        "El firmware inicia la plataforma y facilita la carga del sistema operativo",
+        "El sistema operativo debe iniciarse antes que el firmware",
+        "El firmware es un procesador físico",
+        "El sistema operativo sustituye la alimentación eléctrica"
+      ],
+      "correct": 0,
+      "feedback": "El firmware ejecuta etapas iniciales y permite iniciar el cargador del SO."
+    },
+    {
+      "id": "rep2-b3_q01",
+      "category": "Línea de comandos",
+      "type": "Repaso",
+      "question": "En Windows CMD, ¿qué comando muestra el directorio de trabajo actual y su contenido?",
+      "answers": [
+        "dir",
+        "mkdir",
+        "cls",
+        "exit"
+      ],
+      "correct": 0,
+      "feedback": "dir enumera archivos y carpetas de la ubicación actual."
+    },
+    {
+      "id": "rep2-b3_q02",
+      "category": "Línea de comandos",
+      "type": "Repaso",
+      "question": "En Linux, ¿qué comando muestra la ruta del directorio actual?",
+      "answers": [
+        "cd",
+        "pwd",
+        "ls",
+        "cat"
+      ],
+      "correct": 1,
+      "feedback": "pwd imprime el directorio de trabajo actual."
+    },
+    {
+      "id": "rep2-b3_q03",
+      "category": "Línea de comandos",
+      "type": "Repaso",
+      "question": "¿Qué comando permite cambiar de directorio tanto en CMD como en Bash?",
+      "answers": [
+        "copy",
+        "echo",
+        "del",
+        "cd"
+      ],
+      "correct": 3,
+      "feedback": "cd permite desplazarse entre directorios."
+    },
+    {
+      "id": "rep2-b3_q04",
+      "category": "Línea de comandos",
+      "type": "Repaso",
+      "question": "En Linux, ¿qué comando lista los archivos y directorios de una ubicación?",
+      "answers": [
+        "rm",
+        "touch",
+        "ls",
+        "pwd"
+      ],
+      "correct": 2,
+      "feedback": "ls muestra el contenido de un directorio."
+    },
+    {
+      "id": "rep2-b3_q05",
+      "category": "Línea de comandos",
+      "type": "Repaso",
+      "question": "En Windows CMD, ¿qué comando permite consultar la configuración IP de las interfaces de red?",
+      "answers": [
+        "ipconfig",
+        "hostname",
+        "tasklist",
+        "ping"
+      ],
+      "correct": 0,
+      "feedback": "ipconfig muestra datos de configuración de red en Windows."
+    },
+    {
+      "id": "rep2-b3_q06",
+      "category": "Línea de comandos",
+      "type": "Repaso",
+      "question": "¿Para qué se utiliza habitualmente el comando ping?",
+      "answers": [
+        "Crear un usuario local",
+        "Comprobar la conectividad IP hacia un destino mediante mensajes ICMP",
+        "Cambiar el nombre de un archivo",
+        "Mostrar el contenido de un archivo de texto"
+      ],
+      "correct": 1,
+      "feedback": "ping prueba la respuesta de un destino mediante solicitudes ICMP."
+    },
+    {
+      "id": "rep2-b3_q07",
+      "category": "Línea de comandos",
+      "type": "Repaso",
+      "question": "En Linux, ¿qué comando crea un directorio nuevo?",
+      "answers": [
+        "mkdir",
+        "rmdir",
+        "whoami",
+        "grep"
+      ],
+      "correct": 0,
+      "feedback": "mkdir crea directorios."
+    },
+    {
+      "id": "rep2-b3_q08",
+      "category": "Línea de comandos",
+      "type": "Repaso",
+      "question": "En Windows CMD, ¿qué comando muestra el nombre del equipo?",
+      "answers": [
+        "ipconfig /flushdns",
+        "cls",
+        "hostname",
+        "whoami"
+      ],
+      "correct": 2,
+      "feedback": "hostname devuelve el nombre del host."
+    },
+    {
+      "id": "rep2-b3_q09",
+      "category": "Línea de comandos",
+      "type": "Repaso",
+      "question": "¿Qué comando permite conocer el usuario con cuya identidad se ejecuta una terminal, tanto en Windows como en Linux?",
+      "answers": [
+        "mkdir",
+        "ping",
+        "pwd",
+        "whoami"
+      ],
+      "correct": 3,
+      "feedback": "whoami identifica el usuario efectivo de la sesión."
+    },
+    {
+      "id": "rep2-b3_q10",
+      "category": "Línea de comandos",
+      "type": "Repaso",
+      "question": "En Bash, ¿qué significa el símbolo | entre dos comandos?",
+      "answers": [
+        "Borra automáticamente los archivos temporales",
+        "Ejecuta ambos comandos exclusivamente como administrador",
+        "Cambia el sistema de archivos",
+        "Envía la salida estándar del primero a la entrada estándar del segundo"
+      ],
+      "correct": 3,
+      "feedback": "La tubería (pipe) conecta la salida de un comando con la entrada de otro."
+    },
+    {
+      "id": "rep2-b3_q11",
+      "category": "Línea de comandos",
+      "type": "Repaso",
+      "question": "¿Qué comando de Linux muestra el contenido de un archivo de texto en la terminal?",
+      "answers": [
+        "clear",
+        "cat",
+        "cd",
+        "mkdir"
+      ],
+      "correct": 1,
+      "feedback": "cat imprime el contenido de uno o varios archivos."
+    },
+    {
+      "id": "rep2-b3_q12",
+      "category": "Línea de comandos",
+      "type": "Repaso",
+      "question": "¿Cuál es una diferencia correcta entre CMD y PowerShell?",
+      "answers": [
+        "PowerShell trabaja con objetos en su canalización, mientras CMD se orienta principalmente a texto",
+        "CMD y PowerShell son sistemas operativos distintos",
+        "PowerShell no admite comandos de administración",
+        "CMD funciona únicamente en Linux"
+      ],
+      "correct": 0,
+      "feedback": "PowerShell permite canalizar objetos estructurados, a diferencia del enfoque textual habitual de CMD."
+    }
+  ]
+}
